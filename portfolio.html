@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vasundhra - Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: #f5f8ff;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: sticky;
+            top: 0;
+            background: white;
+            padding: 15px 40px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: right;
+            gap: 25px;
+            font-size: 18px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+        }
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 80px 40px;
+            background: linear-gradient(to right, #007bff, #00c6ff);
+            color: white;
+            gap: 40px;
+            text-align: left;
+        }
+        .hero-text h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+        .hero-text p {
+            font-size: 22px;
+        }
+        .hero-img img {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            border: 6px solid white;
+            object-fit: cover;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            margin-top: 15px;
+            background: white;
+            color: #007bff;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        /* ABOUT SECTION */
+        .section {
+            padding: 70px 40px;
+        }
+        .about {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            justify-content: center;
+        }
+        .about img {
+            width: 250px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .about-text {
+            max-width: 600px;
+        }
+        .about-text h2 {
+            font-size: 32px;
+        }
+
+        /* SKILLS */
+        .skills {
+            background: #eef5ff;
+            padding: 70px 40px;
+        }
+        .skills h2 {
+            text-align: center;
+            font-size: 32px;
+        }
+        .skill-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .skill {
+            background: white;
+            padding: 18px 25px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        /* PROJECTS */
+        .projects h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .project-card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        /* CONTACT */
+        .contact {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 70px 40px;
+        }
+        .contact a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>Hello, I'm Vasundhra 👋</h1>
+            <p>Aspiring Full-Stack Developer | Java | Python | HTML | CSS</p>
+            <a class="btn" href="#contact">Contact Me</a>
+        </div>
+
+        <!-- ***** Replace your image here ***** -->
+        <div class="hero-img">
+            <img src="vasu beauty.jpg" alt="profile">
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+        <div class="about">
+            
+            <!-- ***** Same photo or different photo ***** -->
+            <img src="vasu beauty.jpg" alt="vasundhra pic">
+
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    I'm a passionate developer who loves building websites and solving coding problems.
+                    I am currently working on **Smart India Hackathon fitness project**, and improving my
+                    skills in front-end and back-end development.
+                </p>
+                <p>I love Java, Web Development, and creating real-life technical solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+
+        <div class="skill-list">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Java</div>
+            <div class="skill">Python</div>
+            <div class="skill">Bootstrap</div>
+            <div class="skill">MySQL</div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project-card">
+            <h3><a href="flex-2.html">Gallery Page📸</a></h3>
+            <p>AI posture detection + calorie tracker + workout generator.</p>
+        </div>
+
+        <div class="project-card">
+            <h3><a href="transportagency.html">Trasport Service🚗</a></h3>
+            <p>Functional form with validation + EmailJS integration.</p>
+        </div>
+
+        <div class="project-card">
+            <h3><a href="pro-1.html">library system</a></h3>
+            <p>Responsive website built using HTML, CSS, JS & Bootstrap.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:vasu@gmail.com">vasu@gmail.com</a></p>
+        <p>Phone: <a href="tel:9876543210">9876543210</a></p>
+    </section>
+
+</body>
+</html>
